@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -41,6 +41,27 @@
         }
         button:hover {
             background-color: #0056b3;
+        }
+        .category-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .category-column {
+            flex: 1;
+            min-width: 250px;
+            text-align: left;
+        }
+        .category {
+            font-weight: bold;
+        }
+        .subcategory {
+            margin-left: 20px;
+            color: #555;
+        }
+        .subcategory input {
+            margin-right: 5px;
         }
         .book {
             margin-bottom: 20px;
@@ -106,6 +127,7 @@
             <h2>Select Categories</h2>
             <form id="category-form">
                 <div class="category-container">
+                    <!-- First Column -->
                     <div class="category-column">
                         <li class="category">Emotions
                             <ul>
@@ -113,22 +135,72 @@
                                 <li class="subcategory"><input type="checkbox" id="emotion-sadness" value="Sadness"><label for="emotion-sadness">Sadness</label></li>
                                 <li class="subcategory"><input type="checkbox" id="emotion-hope" value="Hope"><label for="emotion-hope">Hope</label></li>
                                 <li class="subcategory"><input type="checkbox" id="emotion-fear" value="Fear"><label for="emotion-fear">Fear</label></li>
+                                <li class="subcategory"><input type="checkbox" id="emotion-anguish" value="Anguish"><label for="emotion-anguish">Anguish</label></li>
+                                <li class="subcategory"><input type="checkbox" id="emotion-compassion" value="Compassion"><label for="emotion-compassion">Compassion</label></li>
+                                <li class="subcategory"><input type="checkbox" id="emotion-desire" value="Desire"><label for="emotion-desire">Desire</label></li>
+                                <li class="subcategory"><input type="checkbox" id="emotion-envy" value="Envy"><label for="emotion-envy">Envy</label></li>
+                            </ul>
+                        </li>
+                        <li class="category">Actions
+                            <ul>
+                                <li class="subcategory"><input type="checkbox" id="action-treason" value="Treason"><label for="action-treason">Treason</label></li>
+                                <li class="subcategory"><input type="checkbox" id="action-courage" value="Courage"><label for="action-courage">Courage</label></li>
+                                <li class="subcategory"><input type="checkbox" id="action-crime" value="Crime"><label for="action-crime">Crime</label></li>
+                                <li class="subcategory"><input type="checkbox" id="action-revenge" value="Revenge"><label for="action-revenge">Revenge</label></li>
+                                <li class="subcategory"><input type="checkbox" id="action-rescue" value="Rescue"><label for="action-rescue">Rescue</label></li>
+                                <li class="subcategory"><input type="checkbox" id="action-rebellion" value="Rebellion"><label for="action-rebellion">Rebellion</label></li>
+                                <li class="subcategory"><input type="checkbox" id="action-escape" value="Escape"><label for="action-escape">Escape</label></li>
                             </ul>
                         </li>
                     </div>
+
+                    <!-- Second Column -->
                     <div class="category-column">
-                        <li class="category">Actions
+                        <li class="category">Settings
                             <ul>
-                                <li class="subcategory"><input type="checkbox" id="action-courage" value="Courage"><label for="action-courage">Courage</label></li>
-                                <li class="subcategory"><input type="checkbox" id="action-revenge" value="Revenge"><label for="action-revenge">Revenge</label></li>
-                                <li class="subcategory"><input type="checkbox" id="action-escape" value="Escape"><label for="action-escape">Escape</label></li>
+                                <li class="subcategory"><input type="checkbox" id="setting-city" value="City"><label for="setting-city">City</label></li>
+                                <li class="subcategory"><input type="checkbox" id="setting-countryside" value="Countryside"><label for="setting-countryside">Countryside</label></li>
+                                <li class="subcategory"><input type="checkbox" id="setting-beach" value="Beach"><label for="setting-beach">Beach</label></li>
+                                <li class="subcategory"><input type="checkbox" id="setting-forest" value="Forest"><label for="setting-forest">Forest</label></li>
+                                <li class="subcategory"><input type="checkbox" id="setting-mountain" value="Mountain"><label for="setting-mountain">Mountain</label></li>
+                                <li class="subcategory"><input type="checkbox" id="setting-desert" value="Desert"><label for="setting-desert">Desert</label></li>
+                                <li class="subcategory"><input type="checkbox" id="setting-ruins" value="Ruins"><label for="setting-ruins">Ruins</label></li>
+                                <li class="subcategory"><input type="checkbox" id="setting-castle" value="Castle"><label for="setting-castle">Castle</label></li>
+                            </ul>
+                        </li>
+                        <li class="category">Characters
+                            <ul>
+                                <li class="subcategory"><input type="checkbox" id="character-villain" value="Villain"><label for="character-villain">Villain</label></li>
+                                <li class="subcategory"><input type="checkbox" id="character-hero" value="Hero"><label for="character-hero">Hero</label></li>
+                                <li class="subcategory"><input type="checkbox" id="character-antihero" value="Anti-hero"><label for="character-antihero">Anti-hero</label></li>
+                                <li class="subcategory"><input type="checkbox" id="character-monster" value="Monster"><label for="character-monster">Monster</label></li>
+                                <li class="subcategory"><input type="checkbox" id="character-femme-fatale" value="Femme Fatale"><label for="character-femme-fatale">Femme Fatale</label></li>
+                                <li class="subcategory"><input type="checkbox" id="character-leader" value="Leader"><label for="character-leader">Leader</label></li>
+                                <li class="subcategory"><input type="checkbox" id="character-genius" value="Genius"><label for="character-genius">Genius</label></li>
+                                <li class="subcategory"><input type="checkbox" id="character-fool" value="Fool"><label for="character-fool">Fool</label></li>
+                            </ul>
+                        </li>
+                    </div>
+
+                    <!-- Third Column -->
+                    <div class="category-column">
+                        <li class="category">Other Categories
+                            <ul>
+                                <li class="subcategory"><input type="checkbox" id="other-quest" value="Quest"><label for="other-quest">Quest</label></li>
+                                <li class="subcategory"><input type="checkbox" id="other-surprise" value="Surprise"><label for="other-surprise">Surprise</label></li>
+                                <li class="subcategory"><input type="checkbox" id="other-riddle" value="Riddle"><label for="other-riddle">Riddle</label></li>
+                                <li class="subcategory"><input type="checkbox" id="other-transformation" value="Transformation"><label for="other-transformation">Transformation</label></li>
+                                <li class="subcategory"><input type="checkbox" id="other-adventurer" value="Adventurer"><label for="other-adventurer">Adventurer</label></li>
+                                <li class="subcategory"><input type="checkbox" id="other-space" value="Space"><label for="other-space">Space</label></li>
+                                <li class="subcategory"><input type="checkbox" id="other-deity" value="Deity"><label for="other-deity">Deity</label></li>
+                                <li class="subcategory"><input type="checkbox" id="other-animal" value="Animal"><label for="other-animal">Animal</label></li>
                             </ul>
                         </li>
                     </div>
                 </div>
             </form>
 
-            <button onclick="loadBooks()">Load Books</button>
+            <button onclick="searchBooks()">Search Books</button>
             <button onclick="clearSearch()">Clear Search</button>
             <div class="loading" id="loading">Loading...</div>
             <div class="error" id="error"></div>
@@ -143,20 +215,39 @@
     </footer>
 
     <script>
-        async function loadBooks() {
+        async function searchBooks() {
+            const selectedCategories = getSelectedCategories();
+            if (selectedCategories.length === 0) {
+                alert("Please select at least one category.");
+                return;
+            }
+
             document.getElementById('loading').style.display = 'block';
             document.getElementById('error').textContent = '';
 
             try {
-                const response = await fetch('books.json'); // Carrega o arquivo JSON
+                const response = await fetch('books.json');
                 const books = await response.json();
-                displayBooks(books);
+
+                // Filtra os livros com base nas categorias selecionadas
+                const filteredBooks = books.filter(book => {
+                    return selectedCategories.some(category => book.categories.includes(category));
+                });
+
+                displayBooks(filteredBooks);
             } catch (error) {
                 console.error('Error loading books:', error);
                 document.getElementById('error').textContent = 'Failed to load books.';
             } finally {
                 document.getElementById('loading').style.display = 'none';
             }
+        }
+
+        function getSelectedCategories() {
+            const selected = [];
+            const checkboxes = document.querySelectorAll('#category-form input[type="checkbox"]:checked');
+            checkboxes.forEach(checkbox => selected.push(checkbox.value));
+            return selected;
         }
 
         function displayBooks(books) {
