@@ -1,0 +1,20 @@
+[
+    {
+        "title": "Dom Quixote",
+        "author": "Miguel de Cervantes",
+        "description": "A história de um nobre que se torna cavaleiro andante.",
+        "cover": "https://covers.openlibrary.org/b/id/12345-L.jpg"
+    },
+    {
+        "title": "1984",
+        "author": "George Orwell",
+        "description": "Um romance distópico sobre vigilância e controle.",
+        "cover": "https://covers.openlibrary.org/b/id/67890-L.jpg"
+    },
+    {
+        "title": "Orgulho e Preconceito",
+        "author": "Jane Austen",
+        "description": "Um clássico sobre amor e sociedade.",
+        "cover": "https://covers.openlibrary.org/b/id/54321-L.jpg"
+    }
+]
